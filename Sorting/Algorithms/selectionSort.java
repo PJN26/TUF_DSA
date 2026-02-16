@@ -1,4 +1,4 @@
-class selectionSort {
+class SelectionSort {
     public int[] selectionSort(int[] nums) {
         for(int i = 0; i < nums.length; i++) {
             int minIdx = i;
