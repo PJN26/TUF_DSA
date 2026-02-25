@@ -1,7 +1,5 @@
 import java.util.*;
 
-//https://leetcode.com/problems/intersection-of-two-arrays/
-
 class Solution {
     public int[] intersectionArray(int[] nums1, int[] nums2) {
         int i = 0;
