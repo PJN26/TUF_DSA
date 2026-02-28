@@ -3,29 +3,18 @@
 import java.util.*;
 
 class Solution {
-    public long nCr(int n, int r) {
-        if(r > n-r) {
-            r = n - r;
-        }
-
-        if(r == 1) return n;
-
-        long res = 1;
-
-        for(long i = 0; i < r; i++) {
-            res *= (n-i);
-            res /= (i+1);
-        }
-
-        return res;
-    }
     public List<Integer> getRow(int rowIndex) {
-        List<Integer> ans = new ArrayList<>();
+        List<Integer> row = new ArrayList<>();
 
-        for(int i = 0; i <= rowIndex; i++) {
-            ans.add((int)nCr(rowIndex, i));
+        long ans = 1;
+        row.add((int)ans);
+
+        for(int i = 1; i <= rowIndex; i++) {
+            ans *= (rowIndex - i + 1);
+            ans /= i;
+            row.add((int)ans);
         }
 
-        return ans;
+        return row;
     }
 }
