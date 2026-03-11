@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /*
 Given an integer array nums. Return the number of inversions in the array.
 
