@@ -16,7 +16,7 @@ class Solution {
     }
     public void findPartition(int idx, String s, List<String> list, List<List<String>> ans) {
         if(idx == s.length()) {
-            ans.add(new ArrayList(list));
+            ans.add(new ArrayList<>(list));
             return;
         }
 
