@@ -3,7 +3,7 @@
 import java.util.*;
 
 class Solution {
-    private static String[] map = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    private static final String[] map = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
     public void combinations(String digits, StringBuilder sb, int idx,List<String> ans) {
         if(idx == digits.length()) {
