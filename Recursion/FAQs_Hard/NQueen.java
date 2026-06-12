@@ -1,5 +1,7 @@
 //https://leetcode.com/problems/n-queens/description/
 
+import java.util.*;
+
 class Solution {
     public boolean isSafe(int row, int col, List<StringBuilder> board) {
         int i = row;
